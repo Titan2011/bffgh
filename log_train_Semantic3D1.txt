@@ -1,0 +1,498 @@
+****EPOCH 0****
+****EPOCH 0****
+Step 00000050 L_out=14.621 Acc=0.16 ---36300.62 ms/batch
+Step 00000100 L_out=10.097 Acc=0.37 ---35893.83 ms/batch
+Step 00000150 L_out=9.191 Acc=0.38 ---35957.24 ms/batch
+Step 00000200 L_out=24.254 Acc=0.30 ---36172.71 ms/batch
+Step 00000250 L_out=8.359 Acc=0.30 ---36349.97 ms/batch
+Step 00000300 L_out=15.992 Acc=0.30 ---35996.34 ms/batch
+Step 00000350 L_out=10.621 Acc=0.42 ---36057.68 ms/batch
+Step 00000400 L_out=16.537 Acc=0.40 ---35869.15 ms/batch
+Step 00000450 L_out=8.982 Acc=0.33 ---35895.30 ms/batch
+Step 00000500 L_out=11.529 Acc=0.37 ---36158.83 ms/batch
+eval accuracy: 0.4425070196692199
+mean IOU:0.11364487307132788
+Mean IoU = 11.4%
+--------------------------------------------------------
+11.36 | 63.12  0.00 23.10  3.97  0.67  0.05  0.00  0.00 
+--------------------------------------------------------
+
+Best m_IoU is: 11.364
+****EPOCH 1****
+****EPOCH 0****
+Step 00000050 L_out=18.427 Acc=0.22 ---43959.47 ms/batch
+Step 00000100 L_out=14.420 Acc=0.37 ---47695.07 ms/batch
+Step 00000150 L_out=11.985 Acc=0.32 ---48549.62 ms/batch
+Step 00000200 L_out=12.055 Acc=0.40 ---48784.09 ms/batch
+Step 00000250 L_out=8.528 Acc=0.65 ---46850.69 ms/batch
+Step 00000300 L_out=11.532 Acc=0.34 ---49162.31 ms/batch
+Step 00000350 L_out=13.113 Acc=0.47 ---36383.52 ms/batch
+Step 00000400 L_out=9.335 Acc=0.10 ---36894.57 ms/batch
+Step 00000450 L_out=13.501 Acc=0.20 ---58404.12 ms/batch
+Step 00000500 L_out=22.624 Acc=0.47 ---55067.87 ms/batch
+eval accuracy: 0.4039087307357149
+mean IOU:0.10066999521725502
+Mean IoU = 10.1%
+--------------------------------------------------------
+10.07 | 60.75  0.00 16.13  1.77  0.00  0.03  1.85  0.00 
+--------------------------------------------------------
+
+Best m_IoU is: 10.067
+****EPOCH 1****
+Step 00000550 L_out=13.695 Acc=0.61 ---57352.64 ms/batch
+Step 00000600 L_out=11.183 Acc=0.25 ---58000.70 ms/batch
+Step 00000650 L_out=15.337 Acc=0.19 ---57781.50 ms/batch
+Step 00000700 L_out=10.915 Acc=0.39 ---56017.62 ms/batch
+Step 00000750 L_out=13.758 Acc=0.20 ---36243.99 ms/batch
+Step 00000800 L_out=17.075 Acc=0.35 ---35314.06 ms/batch
+Step 00000850 L_out=12.920 Acc=0.67 ---35692.22 ms/batch
+Step 00000900 L_out=11.831 Acc=0.56 ---36160.45 ms/batch
+Step 00000950 L_out=12.537 Acc=0.39 ---35508.86 ms/batch
+Step 00001000 L_out=12.724 Acc=0.29 ---34873.45 ms/batch
+eval accuracy: 0.4336159440406691
+mean IOU:0.12034529437063679
+Mean IoU = 12.0%
+--------------------------------------------------------
+12.03 | 63.34  0.00 10.56  2.57 12.18  0.10  0.00  7.53 
+--------------------------------------------------------
+
+Best m_IoU is: 12.035
+****EPOCH 2****
+Step 00001050 L_out=14.408 Acc=0.34 ---35315.47 ms/batch
+Step 00001100 L_out=15.107 Acc=0.34 ---35298.06 ms/batch
+Step 00001150 L_out=14.115 Acc=0.35 ---35256.20 ms/batch
+Step 00001200 L_out=10.448 Acc=0.65 ---35290.47 ms/batch
+Step 00001250 L_out=14.306 Acc=0.61 ---35315.62 ms/batch
+Step 00001300 L_out=20.266 Acc=0.41 ---35250.07 ms/batch
+Step 00001350 L_out=10.579 Acc=0.47 ---35400.41 ms/batch
+Step 00001400 L_out=9.216 Acc=0.40 ---35521.32 ms/batch
+Step 00001450 L_out=9.476 Acc=0.51 ---35294.86 ms/batch
+Step 00001500 L_out=17.444 Acc=0.34 ---35174.10 ms/batch
+eval accuracy: 0.43863919095584086
+mean IOU:0.13860904763602636
+Mean IoU = 13.9%
+--------------------------------------------------------
+13.86 | 67.50  0.00 17.13  3.47  0.00 12.60 10.19  0.00 
+--------------------------------------------------------
+
+Best m_IoU is: 13.861
+****EPOCH 3****
+Step 00001550 L_out=12.497 Acc=0.26 ---36434.97 ms/batch
+Step 00001600 L_out=12.417 Acc=0.30 ---35403.14 ms/batch
+Step 00001650 L_out=16.278 Acc=0.70 ---35665.94 ms/batch
+Step 00001700 L_out=13.707 Acc=0.41 ---43789.50 ms/batch
+Step 00001750 L_out=20.620 Acc=0.30 ---36447.52 ms/batch
+Step 00001800 L_out=9.150 Acc=0.20 ---44824.27 ms/batch
+Step 00001850 L_out=11.905 Acc=0.35 ---42925.53 ms/batch
+Step 00001900 L_out=16.021 Acc=0.29 ---40807.07 ms/batch
+Step 00001950 L_out=11.820 Acc=0.59 ---36508.02 ms/batch
+Step 00002000 L_out=9.425 Acc=0.23 ---36843.92 ms/batch
+eval accuracy: 0.41824214896668027
+mean IOU:0.13703792793546268
+Mean IoU = 13.7%
+--------------------------------------------------------
+13.70 | 67.22  0.00 15.75  3.21  0.00 13.21 10.24  0.00 
+--------------------------------------------------------
+
+Best m_IoU is: 13.861
+****EPOCH 4****
+Step 00002050 L_out=12.533 Acc=0.17 ---35771.59 ms/batch
+Step 00002100 L_out=8.473 Acc=0.73 ---35887.38 ms/batch
+Step 00002150 L_out=9.312 Acc=0.35 ---36404.33 ms/batch
+Step 00002200 L_out=10.432 Acc=0.41 ---38006.62 ms/batch
+Step 00002250 L_out=12.427 Acc=0.33 ---35445.75 ms/batch
+Step 00002300 L_out=11.824 Acc=0.56 ---36296.71 ms/batch
+Step 00002350 L_out=12.450 Acc=0.33 ---36699.08 ms/batch
+Step 00002400 L_out=12.782 Acc=0.61 ---36384.02 ms/batch
+Step 00002450 L_out=13.713 Acc=0.48 ---38597.13 ms/batch
+Step 00002500 L_out=11.956 Acc=0.51 ---35593.24 ms/batch
+eval accuracy: 0.44795063566852866
+mean IOU:0.14331987702421753
+Mean IoU = 14.3%
+--------------------------------------------------------
+14.33 | 66.68  0.00 20.72  4.19  2.62  9.76  5.66  5.02 
+--------------------------------------------------------
+
+Best m_IoU is: 14.332
+****EPOCH 5****
+Step 00002550 L_out=15.581 Acc=0.47 ---36224.30 ms/batch
+Step 00002600 L_out=9.801 Acc=0.52 ---36949.95 ms/batch
+Step 00002650 L_out=12.250 Acc=0.24 ---36470.06 ms/batch
+Step 00002700 L_out=10.099 Acc=0.54 ---36112.20 ms/batch
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+****EPOCH 0****
+Verifying dataset structure...
+Total inputs: 24
+Expected: 29 items (xyz: 5, neigh_idx: 5, etc.)
+Layer 0: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 1: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 2: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 3: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 4: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+****EPOCH 0****
+NaN error detected at step 1
+Error details: Input to reshape is a tensor with 3145728 values, but the requested shape has 12582912
+	 [[{{node layers/Encoder_1/Reshape_3}} = Reshape[T=DT_FLOAT, Tshape=DT_INT32, _device="/job:localhost/replica:0/task:0/device:CPU:0"](layers/Encoder_1/GatherV2, layers/Encoder_1/Reshape_3/shape)]]
+
+Caused by op 'layers/Encoder_1/Reshape_3', defined at:
+  File "main_Semantic3D.py", line 319, in <module>
+    model = Network(dataset, cfg)
+  File "D:\RandLA-Net\RandLANet.py", line 432, in __init__
+    self.logits = self.inference(self.inputs, self.is_training)
+  File "D:\RandLA-Net\RandLANet.py", line 518, in inference
+    is_training
+  File "D:\RandLA-Net\RandLANet.py", line 615, in transformer_res_block
+    xyz, feature, neigh_idx, d_out, name, is_training
+  File "D:\RandLA-Net\RandLANet.py", line 645, in transformer_aggregation
+    neighbor_xyz = self.gather_neighbour(xyz, neigh_idx)
+  File "D:\RandLA-Net\RandLANet.py", line 824, in gather_neighbour
+    neighbor = tf.reshape(neigh_flat, [batch_size, num_points, K, feat_dim])
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\ops\gen_array_ops.py", line 7546, in reshape
+    "Reshape", tensor=tensor, shape=shape, name=name)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\framework\op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\util\deprecation.py", line 488, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\framework\ops.py", line 3272, in create_op
+    op_def=op_def)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\framework\ops.py", line 1768, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+InvalidArgumentError (see above for traceback): Input to reshape is a tensor with 3145728 values, but the requested shape has 12582912
+	 [[{{node layers/Encoder_1/Reshape_3}} = Reshape[T=DT_FLOAT, Tshape=DT_INT32, _device="/job:localhost/replica:0/task:0/device:CPU:0"](layers/Encoder_1/GatherV2, layers/Encoder_1/Reshape_3/shape)]]
+
+Saved crash snapshot, terminating training
+Training finished
+===== NETWORK INITIALIZATION =====
+Verifying dataset structure:
+Total inputs: 24
+Expected: 29 items (xyz: 5, neigh_idx: 5, etc.)
+Layer 0: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 1: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 2: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 3: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 4: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Saving to: results/Log_2025-06-03_06-02-57
+Network initialized successfully
+****EPOCH 0****
+Numerical error detected at step 1
+Error details: Input to reshape is a tensor with 3145728 values, but the requested shape has 12582912
+	 [[{{node layers/Encoder_1/Reshape_3}} = Reshape[T=DT_FLOAT, Tshape=DT_INT32, _device="/job:localhost/replica:0/task:0/device:CPU:0"](layers/Encoder_1/GatherV2, layers/Encoder_1/Reshape_3/shape)]]
+
+Caused by op 'layers/Encoder_1/Reshape_3', defined at:
+  File "main_Semantic3D.py", line 319, in <module>
+    model = Network(dataset, cfg)
+  File "D:\RandLA-Net\RandLANet.py", line 437, in __init__
+    self.logits = self.inference(self.inputs, self.is_training)
+  File "D:\RandLA-Net\RandLANet.py", line 533, in inference
+    is_training
+  File "D:\RandLA-Net\RandLANet.py", line 677, in transformer_res_block
+    xyz, feature, neigh_idx, d_out, name, is_training
+  File "D:\RandLA-Net\RandLANet.py", line 709, in transformer_aggregation
+    neighbor_xyz = self.gather_neighbour(xyz, neigh_idx)
+  File "D:\RandLA-Net\RandLANet.py", line 945, in gather_neighbour
+    neighbor = tf.reshape(neigh_flat, [batch_size, num_points, K, feat_dim])
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\ops\gen_array_ops.py", line 7546, in reshape
+    "Reshape", tensor=tensor, shape=shape, name=name)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\framework\op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\util\deprecation.py", line 488, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\framework\ops.py", line 3272, in create_op
+    op_def=op_def)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\framework\ops.py", line 1768, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+InvalidArgumentError (see above for traceback): Input to reshape is a tensor with 3145728 values, but the requested shape has 12582912
+	 [[{{node layers/Encoder_1/Reshape_3}} = Reshape[T=DT_FLOAT, Tshape=DT_INT32, _device="/job:localhost/replica:0/task:0/device:CPU:0"](layers/Encoder_1/GatherV2, layers/Encoder_1/Reshape_3/shape)]]
+
+Saved crash snapshot to: results/Log_2025-06-03_06-02-57\crash_snapshot
+Terminating training
+Training finished
+===== NETWORK INITIALIZATION =====
+Verifying dataset structure:
+Total inputs: 24
+Expected: 29 items (xyz: 5, neigh_idx: 5, etc.)
+Layer 0: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 1: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 2: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 3: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 4: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Saving to: results/Log_2025-06-03_07-58-19
+===== NETWORK INITIALIZATION =====
+Verifying dataset structure:
+Total inputs: 24
+Expected: 29 items (xyz: 5, neigh_idx: 5, etc.)
+Layer 0: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 1: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 2: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 3: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 4: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Saving to: results/Log_2025-06-03_09-15-51
+Network initialized successfully
+****EPOCH 0****
+Numerical error detected at step 1
+Error details: Input to reshape is a tensor with 3145728 values, but the requested shape has 12582912
+	 [[{{node layers/Encoder_1/Reshape_3}} = Reshape[T=DT_FLOAT, Tshape=DT_INT32, _device="/job:localhost/replica:0/task:0/device:CPU:0"](layers/Encoder_1/GatherV2, layers/Encoder_1/Reshape_3/shape)]]
+
+Caused by op 'layers/Encoder_1/Reshape_3', defined at:
+  File "main_Semantic3D.py", line 319, in <module>
+    model = Network(dataset, cfg)
+  File "D:\RandLA-Net\RandLANet.py", line 437, in __init__
+    self.logits = self.inference(self.inputs, self.is_training)
+  File "D:\RandLA-Net\RandLANet.py", line 533, in inference
+    is_training
+  File "D:\RandLA-Net\RandLANet.py", line 679, in transformer_res_block
+    xyz, feature, neigh_idx, d_out, name, is_training
+  File "D:\RandLA-Net\RandLANet.py", line 711, in transformer_aggregation
+    neighbor_xyz = self.gather_neighbour(xyz, neigh_idx)
+  File "D:\RandLA-Net\RandLANet.py", line 950, in gather_neighbour
+    neighbor = tf.reshape(neigh_flat, [batch_size, num_points, K, feat_dim])
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\ops\gen_array_ops.py", line 7546, in reshape
+    "Reshape", tensor=tensor, shape=shape, name=name)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\framework\op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\util\deprecation.py", line 488, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\framework\ops.py", line 3272, in create_op
+    op_def=op_def)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\framework\ops.py", line 1768, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+InvalidArgumentError (see above for traceback): Input to reshape is a tensor with 3145728 values, but the requested shape has 12582912
+	 [[{{node layers/Encoder_1/Reshape_3}} = Reshape[T=DT_FLOAT, Tshape=DT_INT32, _device="/job:localhost/replica:0/task:0/device:CPU:0"](layers/Encoder_1/GatherV2, layers/Encoder_1/Reshape_3/shape)]]
+
+Saved crash snapshot to: results/Log_2025-06-03_09-15-51\crash_snapshot
+Terminating training
+Training finished
+===== NETWORK INITIALIZATION =====
+Verifying dataset structure:
+Total inputs: 24
+Expected: 29 items (xyz: 5, neigh_idx: 5, etc.)
+Layer 0: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 1: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 2: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 3: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 4: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Saving to: results/Log_2025-06-03_09-18-44
+Network initialized successfully
+****EPOCH 0****
+Numerical error detected at step 1
+Error details: indices[2009789] = 76186 is not in [0, 65536)
+	 [[{{node layers/Decoder_4/GatherV2}} = GatherV2[Taxis=DT_INT32, Tindices=DT_INT32, Tparams=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](layers/Decoder_4/Reshape, layers/Decoder_4/Reshape_2, optimizer/gradients/layers/Encoder_0/GatherV2_1_grad/concat/axis)]]
+
+Caused by op 'layers/Decoder_4/GatherV2', defined at:
+  File "main_Semantic3D.py", line 319, in <module>
+    model = Network(dataset, cfg)
+  File "D:\RandLA-Net\RandLANet.py", line 437, in __init__
+    self.logits = self.inference(self.inputs, self.is_training)
+  File "D:\RandLA-Net\RandLANet.py", line 621, in inference
+    is_training
+  File "D:\RandLA-Net\RandLANet.py", line 677, in transformer_res_block
+    xyz, feature, neigh_idx, d_out, name, is_training
+  File "D:\RandLA-Net\RandLANet.py", line 709, in transformer_aggregation
+    neighbor_xyz = self.gather_neighbour(xyz, neigh_idx)
+  File "D:\RandLA-Net\RandLANet.py", line 944, in gather_neighbour
+    neigh_flat = tf.gather(pc_flat, idx_flat)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\ops\array_ops.py", line 2669, in gather
+    return gen_array_ops.gather_v2(params, indices, axis, name=name)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\ops\gen_array_ops.py", line 3866, in gather_v2
+    "GatherV2", params=params, indices=indices, axis=axis, name=name)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\framework\op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\util\deprecation.py", line 488, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\framework\ops.py", line 3272, in create_op
+    op_def=op_def)
+  File "C:\Users\Ayaan\anaconda3\envs\randlanet\lib\site-packages\tensorflow\python\framework\ops.py", line 1768, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+InvalidArgumentError (see above for traceback): indices[2009789] = 76186 is not in [0, 65536)
+	 [[{{node layers/Decoder_4/GatherV2}} = GatherV2[Taxis=DT_INT32, Tindices=DT_INT32, Tparams=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](layers/Decoder_4/Reshape, layers/Decoder_4/Reshape_2, optimizer/gradients/layers/Encoder_0/GatherV2_1_grad/concat/axis)]]
+
+Saved crash snapshot to: results/Log_2025-06-03_09-18-44\crash_snapshot
+Terminating training
+Training finished
+===== NETWORK INITIALIZATION =====
+Verifying dataset structure:
+Total inputs: 24
+Expected: 29 items (xyz: 5, neigh_idx: 5, etc.)
+Layer 0: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 1: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 2: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 3: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 4: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Saving to: results/Log_2025-06-03_12-28-21
+Network initialized successfully
+****EPOCH 0****
+Step 00000050 L_out=12.370 Acc=0.14 ---33410.71 ms/batch
+Step 00000100 L_out=22.182 Acc=0.20 ---32541.46 ms/batch
+Step 00000150 L_out=9.001 Acc=0.47 ---35858.12 ms/batch
+Step 00000200 L_out=9.274 Acc=0.32 ---53504.68 ms/batch
+Step 00000250 L_out=15.693 Acc=0.00 ---33823.54 ms/batch
+Step 00000300 L_out=11.198 Acc=0.00 ---33978.86 ms/batch
+Step 00000350 L_out=9.512 Acc=0.11 ---33190.01 ms/batch
+Step 00000400 L_out=15.617 Acc=0.26 ---37213.35 ms/batch
+Step 00000450 L_out=12.877 Acc=0.21 ---32465.53 ms/batch
+Step 00000500 L_out=17.655 Acc=0.22 ---31972.87 ms/batch
+===== NETWORK INITIALIZATION =====
+Verifying dataset structure:
+Total inputs: 24
+Expected: 29 items (xyz: 5, neigh_idx: 5, etc.)
+Layer 0: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 1: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 2: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 3: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 4: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Saving to: results/Log_2025-06-04_06-20-56
+Network initialized successfully
+****EPOCH 0****
+Step 00000010 L_out=12.679 Acc=0.48 ---35803.33 ms/batch
+Step 00000020 L_out=11.165 Acc=0.35 ---33851.26 ms/batch
+Step 00000030 L_out=7.713 Acc=0.09 ---33387.78 ms/batch
+Step 00000040 L_out=10.594 Acc=0.15 ---37842.79 ms/batch
+Step 00000050 L_out=12.588 Acc=0.06 ---35913.72 ms/batch
+Step 00000060 L_out=13.882 Acc=0.20 ---34601.03 ms/batch
+Step 00000070 L_out=8.730 Acc=0.02 ---33633.00 ms/batch
+Step 00000080 L_out=8.980 Acc=0.31 ---34140.45 ms/batch
+Step 00000090 L_out=8.519 Acc=0.36 ---33685.76 ms/batch
+Step 00000100 L_out=13.789 Acc=0.30 ---35712.49 ms/batch
+Step 00000110 L_out=10.226 Acc=0.03 ---34206.06 ms/batch
+Step 00000120 L_out=10.691 Acc=0.26 ---35147.30 ms/batch
+Step 00000130 L_out=11.659 Acc=0.28 ---34049.40 ms/batch
+Step 00000140 L_out=9.293 Acc=0.19 ---38732.90 ms/batch
+Step 00000150 L_out=12.559 Acc=0.27 ---32877.41 ms/batch
+Step 00000160 L_out=16.659 Acc=0.06 ---36351.34 ms/batch
+===== NETWORK INITIALIZATION =====
+Verifying dataset structure:
+Total inputs: 24
+Expected: 29 items (xyz: 5, neigh_idx: 5, etc.)
+Layer 0: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 1: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 2: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 3: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 4: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Saving to: results/Log_2025-06-04_09-27-16
+Network initialized successfully
+****EPOCH 0****
+Step 00000010 L_out=21.183 Acc=0.18 ---82531.38 ms/batch
+Step 00000020 L_out=16.026 Acc=0.17 ---101934.43 ms/batch
+Step 00000030 L_out=14.992 Acc=0.28 ---101631.86 ms/batch
+Step 00000040 L_out=13.299 Acc=0.12 ---115494.72 ms/batch
+Step 00000050 L_out=11.092 Acc=0.17 ---112213.65 ms/batch
+Step 00000060 L_out=10.468 Acc=0.23 ---123840.64 ms/batch
+Step 00000070 L_out=12.228 Acc=0.25 ---104680.62 ms/batch
+Step 00000080 L_out=11.202 Acc=0.24 ---121031.60 ms/batch
+Step 00000090 L_out=11.468 Acc=0.31 ---112214.85 ms/batch
+Step 00000100 L_out=12.552 Acc=0.28 ---106659.44 ms/batch
+Step 00000110 L_out=11.444 Acc=0.34 ---89684.87 ms/batch
+Step 00000120 L_out=8.945 Acc=0.34 ---86990.18 ms/batch
+Step 00000130 L_out=11.027 Acc=0.34 ---87992.19 ms/batch
+Step 00000140 L_out=9.126 Acc=0.45 ---90050.11 ms/batch
+Step 00000150 L_out=10.378 Acc=0.27 ---87407.65 ms/batch
+Step 00000160 L_out=10.605 Acc=0.18 ---89868.78 ms/batch
+Step 00000170 L_out=11.500 Acc=0.41 ---87206.86 ms/batch
+Step 00000180 L_out=12.586 Acc=0.34 ---84375.85 ms/batch
+Step 00000190 L_out=16.279 Acc=0.27 ---84217.80 ms/batch
+Step 00000200 L_out=13.506 Acc=0.46 ---84487.14 ms/batch
+Step 00000210 L_out=14.111 Acc=0.42 ---86907.42 ms/batch
+Step 00000220 L_out=16.611 Acc=0.37 ---96215.23 ms/batch
+Step 00000230 L_out=12.235 Acc=0.44 ---126569.74 ms/batch
+Step 00000240 L_out=14.405 Acc=0.43 ---98469.16 ms/batch
+Step 00000250 L_out=13.866 Acc=0.29 ---118202.78 ms/batch
+Step 00000260 L_out=17.272 Acc=0.43 ---115161.17 ms/batch
+Step 00000270 L_out=11.580 Acc=0.51 ---87715.57 ms/batch
+Step 00000280 L_out=11.517 Acc=0.31 ---85046.03 ms/batch
+Step 00000290 L_out=19.909 Acc=0.34 ---83987.47 ms/batch
+Step 00000300 L_out=11.024 Acc=0.34 ---91800.62 ms/batch
+===== NETWORK INITIALIZATION =====
+Verifying dataset structure:
+Total inputs: 24
+Expected: 29 items (xyz: 5, neigh_idx: 5, etc.)
+Layer 0: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 1: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 2: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 3: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Layer 4: XYZ shape=(?, ?, 3), Neigh_idx shape=<unknown>
+Saving to: results/Log_2025-06-05_05-59-29
+Network initialized successfully
+****EPOCH 0****
+Step 00000010 L_out=15.067 Acc=0.18 ---116240.39 ms/batch
+Step 00000020 L_out=9.995 Acc=0.11 ---101667.74 ms/batch
+Step 00000030 L_out=14.738 Acc=0.27 ---109607.92 ms/batch
+Step 00000040 L_out=12.178 Acc=0.13 ---121067.72 ms/batch
+Step 00000050 L_out=11.595 Acc=0.17 ---103619.25 ms/batch
+Step 00000060 L_out=8.946 Acc=0.21 ---103387.45 ms/batch
+Step 00000070 L_out=9.472 Acc=0.08 ---99806.28 ms/batch
+Step 00000080 L_out=12.024 Acc=0.18 ---99656.89 ms/batch
+Step 00000090 L_out=9.651 Acc=0.18 ---92008.64 ms/batch
+Step 00000100 L_out=11.815 Acc=0.30 ---86670.15 ms/batch
+Step 00000110 L_out=10.620 Acc=0.33 ---134093.27 ms/batch
+Step 00000120 L_out=8.924 Acc=0.31 ---140247.17 ms/batch
+Step 00000130 L_out=11.019 Acc=0.22 ---108257.34 ms/batch
+Step 00000140 L_out=8.625 Acc=0.44 ---90001.70 ms/batch
+Step 00000150 L_out=9.942 Acc=0.24 ---88430.76 ms/batch
+Step 00000160 L_out=21.580 Acc=0.02 ---104109.34 ms/batch
+Step 00000170 L_out=18.698 Acc=0.10 ---116237.24 ms/batch
+Step 00000180 L_out=15.036 Acc=0.25 ---109858.98 ms/batch
+Step 00000190 L_out=13.330 Acc=0.14 ---133149.25 ms/batch
+Step 00000200 L_out=14.376 Acc=0.30 ---119888.63 ms/batch
+Step 00000210 L_out=12.424 Acc=0.28 ---128418.21 ms/batch
+Step 00000220 L_out=18.521 Acc=0.28 ---108072.75 ms/batch
+Step 00000230 L_out=17.329 Acc=0.26 ---87674.31 ms/batch
+Step 00000240 L_out=14.659 Acc=0.32 ---90747.51 ms/batch
+Step 00000250 L_out=13.872 Acc=0.27 ---89170.80 ms/batch
+Step 00000260 L_out=11.500 Acc=0.21 ---97401.79 ms/batch
+Step 00000270 L_out=13.813 Acc=0.40 ---87897.14 ms/batch
+Step 00000280 L_out=9.800 Acc=0.29 ---92598.82 ms/batch
+Step 00000290 L_out=16.976 Acc=0.29 ---81602.94 ms/batch
+Step 00000300 L_out=15.008 Acc=0.45 ---95282.69 ms/batch
+Step 00000310 L_out=12.914 Acc=0.24 ---86190.54 ms/batch
+Step 00000320 L_out=19.419 Acc=0.34 ---82778.25 ms/batch
+Step 00000330 L_out=13.663 Acc=0.35 ---84088.73 ms/batch
+Step 00000340 L_out=15.151 Acc=0.48 ---92721.98 ms/batch
+Step 00000350 L_out=12.701 Acc=0.45 ---81181.25 ms/batch
+Step 00000360 L_out=13.871 Acc=0.54 ---88154.72 ms/batch
+Step 00000370 L_out=11.766 Acc=0.34 ---95875.07 ms/batch
+Step 00000380 L_out=12.854 Acc=0.28 ---132755.43 ms/batch
+Step 00000390 L_out=13.291 Acc=0.33 ---96061.70 ms/batch
+Step 00000400 L_out=11.493 Acc=0.39 ---112991.19 ms/batch
+Step 00000410 L_out=13.837 Acc=0.49 ---111521.24 ms/batch
+Step 00000420 L_out=12.490 Acc=0.45 ---103290.93 ms/batch
+Step 00000430 L_out=15.108 Acc=0.43 ---89715.66 ms/batch
+Step 00000440 L_out=13.621 Acc=0.48 ---83625.99 ms/batch
+Step 00000450 L_out=12.782 Acc=0.43 ---86214.84 ms/batch
+Step 00000460 L_out=12.056 Acc=0.38 ---86211.38 ms/batch
+Step 00000470 L_out=15.285 Acc=0.55 ---82581.78 ms/batch
+Step 00000480 L_out=14.321 Acc=0.41 ---85736.10 ms/batch
+Step 00000490 L_out=11.969 Acc=0.37 ---82346.66 ms/batch
+Step 00000500 L_out=14.133 Acc=0.31 ---87058.98 ms/batch
+0 / 100
+50 / 100
+Evaluation accuracy: 0.4050
+Mean IoU: 0.0720
+Mean IoU = 7.2%
+-------------------------------------------------
+7.20 | 43.23 0.04 14.29 0.00 0.00 0.00 0.00 0.00 
+-------------------------------------------------
+
+Best m_IoU is: 7.195
+****EPOCH 1****
+Step 00000510 L_out=11.652 Acc=0.20 ---81479.37 ms/batch
+Step 00000520 L_out=10.794 Acc=0.51 ---87915.91 ms/batch

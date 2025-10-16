@@ -1,0 +1,365 @@
+# Comprehensive Test Cases for GAS 3D Segmentation
+
+## 1. Basic Functionality Tests
+
+### 1.1 Model Initialization
+```python
+# Test: Model can be initialized with config
+from helper_tool import ConfigSemantic3D as cfg
+from RandLANet_fixed import Network
+
+model = Network(cfg)
+assert model.num_classes == cfg.num_classes
+print("✓ Model initialization test passed")
+```
+
+### 1.2 Forward Pass
+```python
+# Test: Model can perform forward pass
+import torch
+
+batch = {
+    'xyz': [torch.randn(2, 40960, 3).cuda()],
+    'features': [torch.randn(2, 40960, 6).cuda()],
+    'labels': torch.randint(0, 9, (2, 40960)).cuda()
+}
+
+output = model(batch)
+assert 'logits' in output
+assert output['logits'].shape == (2, 40960, cfg.num_classes)
+print("✓ Forward pass test passed")
+```
+
+## 2. GAS Module Tests
+
+### 2.1 Curvature Computation
+```python
+# Test: Curvature computation works correctly
+from RandLANet_fixed import GeometryAdaptiveSampling
+
+gas = GeometryAdaptiveSampling(in_channels=8)
+xyz = torch.randn(2, 1000, 3).cuda()
+cov = gas.compute_local_covariance(xyz)
+assert cov.shape == (2, 1000, 3, 3)
+print("✓ Curvature computation test passed")
+```
+
+### 2.2 Sampling Strategy
+```python
+# Test: GAS samples correct number of points
+features = torch.randn(2, 1000, 8).cuda()
+sample_ratio = 0.25
+
+sampled_feat, sampled_xyz, indices, aux_info = gas(xyz, features, sample_ratio)
+assert sampled_feat.shape == (2, 250, 8)
+assert sampled_xyz.shape == (2, 250, 3)
+assert 'curvature_scores' in aux_info
+print("✓ Sampling strategy test passed")
+```
+
+## 3. Boundary Metrics Tests
+
+### 3.1 Boundary Detection
+```python
+# Test: Boundary detection works
+from boundary_metrics import BoundaryAwareMetrics
+
+metrics = BoundaryAwareMetrics(num_classes=9)
+predictions = torch.randint(0, 9, (2, 1000, 9)).float().cuda()
+labels = torch.randint(0, 9, (2, 1000)).cuda()
+xyz = torch.randn(2, 1000, 3).cuda()
+
+metrics.update(predictions, labels, xyz)
+results = metrics.compute_metrics()
+assert 'boundary_mIoU' in results
+print("✓ Boundary detection test passed")
+```
+
+### 3.2 Curvature Stratification
+```python
+# Test: Curvature-based evaluation
+from boundary_metrics import CurvatureAwareEvaluator
+
+evaluator = CurvatureAwareEvaluator(num_classes=9)
+results = evaluator.evaluate(predictions, labels, xyz)
+assert 'mIoU_curvature_bin_0' in results
+assert 'mIoU_curvature_bin_4' in results
+print("✓ Curvature stratification test passed")
+```
+
+## 4. Ablation Study Tests
+
+### 4.1 Baseline Implementations
+```python
+# Test: All baseline sampling methods work
+from ablation_study import RandomSampling, GridSampling, FPSSampling
+
+samplers = {
+    'random': RandomSampling(),
+    'grid': GridSampling(voxel_size=0.06),
+    'fps': FPSSampling()
+}
+
+for name, sampler in samplers.items():
+    indices = sampler.sample(xyz[0], features[0], k=250)
+    assert indices.shape == (250,)
+    print(f"✓ {name} sampling test passed")
+```
+
+### 4.2 Ablation Framework
+```python
+# Test: Ablation study can run
+from ablation_study import AblationStudy
+
+ablation = AblationStudy(model, cfg)
+# Mock test loader with single batch
+test_loader = [batch]
+results = ablation.run_ablation(test_loader, device='cuda')
+assert 'gas' in results
+assert 'random' in results
+print("✓ Ablation framework test passed")
+```
+
+## 5. Visualization Tests
+
+### 5.1 Boundary Error Visualization
+```python
+# Test: Visualization tools work
+from visualization_tools import BoundaryVisualization
+
+viz = BoundaryVisualization(save_dir='test_viz')
+viz.visualize_boundary_errors(
+    xyz[0], 
+    predictions[0].argmax(dim=-1),
+    labels[0],
+    'test_scene',
+    num_classes=9
+)
+assert os.path.exists('test_viz/test_scene_boundary_errors.png')
+print("✓ Boundary visualization test passed")
+```
+
+### 5.2 Sampling Distribution
+```python
+# Test: Sampling distribution visualization
+viz.visualize_sampling_distribution(
+    xyz[0],
+    indices[0],
+    aux_info,
+    'test_scene',
+    layer_idx=0
+)
+assert os.path.exists('test_viz/test_scene_layer0_sampling.png')
+print("✓ Sampling distribution visualization test passed")
+```
+
+## 6. Training Pipeline Tests
+
+### 6.1 Data Loading
+```python
+# Test: Data loader works correctly
+from main_Semantic3D import get_dataloader
+
+train_loader, _ = get_dataloader('training')
+batch = next(iter(train_loader))
+assert 'xyz' in batch
+assert 'features' in batch
+assert 'labels' in batch
+print("✓ Data loading test passed")
+```
+
+### 6.2 Loss Computation
+```python
+# Test: Loss can be computed
+import torch.nn as nn
+
+criterion = nn.CrossEntropyLoss()
+logits = output['logits'].view(-1, cfg.num_classes)
+labels = batch['labels'].view(-1)
+loss = criterion(logits, labels)
+assert loss.item() > 0
+print("✓ Loss computation test passed")
+```
+
+## 7. SOTA Comparison Tests
+
+### 7.1 Baseline Model Loading
+```python
+# Test: SOTA comparison framework works
+from sota_comparison import SOTAComparison
+
+comparison = SOTAComparison(cfg)
+assert 'Random' in comparison.models
+assert 'Grid' in comparison.models
+assert 'FPS' in comparison.models
+print("✓ SOTA comparison initialization test passed")
+```
+
+### 7.2 Statistical Analysis
+```python
+# Test: Statistical significance testing
+mock_results = {
+    'Random': {'mIoU': [0.65, 0.64, 0.66, 0.65, 0.64]},
+    'GAS (Ours)': {'mIoU': [0.71, 0.72, 0.71, 0.70, 0.71]}
+}
+
+analysis = comparison.analyze_results(mock_results)
+assert 'Random' in analysis
+assert 'mean' in analysis['Random']['mIoU']
+print("✓ Statistical analysis test passed")
+```
+
+## 8. Theoretical Analysis Tests
+
+### 8.1 Complexity Analysis
+```python
+# Test: Theoretical analysis module works
+from theoretical_analysis import TheoreticalAnalysis
+
+complexity = TheoreticalAnalysis.complexity_analysis()
+assert 'GAS' in complexity
+assert 'Time' in complexity['GAS']
+print("✓ Complexity analysis test passed")
+```
+
+### 8.2 Information Theory Metrics
+```python
+# Test: Information theoretic analysis
+sampled_indices = torch.randint(0, 1000, (250,))
+info_metrics = TheoreticalAnalysis.information_theoretic_analysis(
+    xyz[0], sampled_indices, labels[0]
+)
+assert 'kl_divergence' in info_metrics
+assert 'mutual_information' in info_metrics
+print("✓ Information theory metrics test passed")
+```
+
+## 9. GPU Memory Tests
+
+### 9.1 Memory Efficiency
+```python
+# Test: Model fits in reasonable GPU memory
+import torch
+
+torch.cuda.empty_cache()
+initial_memory = torch.cuda.memory_allocated()
+
+# Process large batch
+large_batch = {
+    'xyz': [torch.randn(4, 40960, 3).cuda()],
+    'features': [torch.randn(4, 40960, 6).cuda()],
+    'labels': torch.randint(0, 9, (4, 40960)).cuda()
+}
+
+with torch.no_grad():
+    output = model(large_batch)
+
+peak_memory = torch.cuda.max_memory_allocated()
+memory_used_gb = (peak_memory - initial_memory) / 1e9
+
+assert memory_used_gb < 8.0  # Should fit in 8GB GPU
+print(f"✓ Memory efficiency test passed (used {memory_used_gb:.2f} GB)")
+```
+
+## 10. End-to-End Tests
+
+### 10.1 Training Step
+```python
+# Test: Complete training step
+optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+model.train()
+
+optimizer.zero_grad()
+output = model(batch)
+logits = output['logits'].view(-1, cfg.num_classes)
+labels = batch['labels'].view(-1)
+loss = criterion(logits, labels)
+loss.backward()
+optimizer.step()
+
+print("✓ Training step test passed")
+```
+
+### 10.2 Evaluation Step
+```python
+# Test: Complete evaluation step
+model.eval()
+metrics = BoundaryAwareMetrics(cfg.num_classes)
+
+with torch.no_grad():
+    output = model(batch)
+    metrics.update(output['logits'], batch['labels'], batch['xyz'][0])
+
+results = metrics.compute_metrics()
+assert results['mIoU'] >= 0 and results['mIoU'] <= 1
+print("✓ Evaluation step test passed")
+```
+
+## Test Execution Script
+
+```python
+#!/usr/bin/env python
+"""
+Run all tests for GAS 3D Segmentation
+Usage: python run_tests.py
+"""
+
+import sys
+import traceback
+
+def run_all_tests():
+    test_results = []
+    
+    # List all test functions
+    tests = [
+        test_model_initialization,
+        test_forward_pass,
+        test_curvature_computation,
+        test_sampling_strategy,
+        test_boundary_detection,
+        test_curvature_stratification,
+        test_baseline_implementations,
+        test_ablation_framework,
+        test_boundary_visualization,
+        test_sampling_distribution,
+        test_data_loading,
+        test_loss_computation,
+        test_sota_comparison,
+        test_statistical_analysis,
+        test_complexity_analysis,
+        test_information_theory,
+        test_memory_efficiency,
+        test_training_step,
+        test_evaluation_step
+    ]
+    
+    for test in tests:
+        try:
+            test()
+            test_results.append((test.__name__, "PASSED", None))
+        except Exception as e:
+            test_results.append((test.__name__, "FAILED", str(e)))
+            traceback.print_exc()
+    
+    # Print summary
+    print("\n" + "="*50)
+    print("TEST SUMMARY")
+    print("="*50)
+    
+    passed = sum(1 for _, status, _ in test_results if status == "PASSED")
+    total = len(test_results)
+    
+    for name, status, error in test_results:
+        if status == "PASSED":
+            print(f"✓ {name}")
+        else:
+            print(f"✗ {name}: {error}")
+    
+    print(f"\nTotal: {passed}/{total} tests passed")
+    
+    return passed == total
+
+if __name__ == "__main__":
+    success = run_all_tests()
+    sys.exit(0 if success else 1)
+```
